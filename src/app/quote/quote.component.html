@@ -1,1 +1,11 @@
-<p>quote works!</p>
+<div class="container text-success">
+  <div *ngFor="let quote of quotes">
+    <p>
+      {{ quote.id }}. {{ quote.theQuote }} <br />
+      <small>
+        {{ quote.authorName }}
+        {{ quote.creationDate | date }}
+      </small>
+    </p>
+  </div>
+</div>

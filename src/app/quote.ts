@@ -1,7 +1,11 @@
 export class Quote {
-    id:number;
-    authorName: string;
-    theQuote: string;
-    creationDate: Date;
 
+    constructor(
+        public id:number,
+        public authorName: string, 
+        public theQuote: string,
+        public creationDate: Date,
+
+    ){}
+    
 }
