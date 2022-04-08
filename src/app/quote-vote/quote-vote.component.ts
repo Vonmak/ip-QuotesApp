@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteVoteComponent implements OnInit {
 
+numberOfUpVotes:number =0;
+numberOfDownVotes:number =0;
+
+
+upVote(){
+  this.numberOfUpVotes++;
+}
+
+downVote(){
+  this.numberOfDownVotes++;
+}
   constructor() { }
 
   ngOnInit(): void {
