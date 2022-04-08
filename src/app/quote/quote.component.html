@@ -1,11 +1,17 @@
 <div class="container text-success">
-  <div *ngFor="let quote of quotes">
+  <div *ngFor="let quote of quotes; let i = index">
     <p>
       {{ quote.id }}. {{ quote.theQuote }} <br />
+      <button (click)="details(i)">Details</button>
       <small>
         {{ quote.authorName }}
         {{ quote.creationDate | date }}
       </small>
     </p>
+    <div *ngIf="quote.showDetails">
+      <app-quote-detail
+        (isComplete)="deleteQuote($event, i)"
+      ></app-quote-detail>
+    </div>
   </div>
 </div>

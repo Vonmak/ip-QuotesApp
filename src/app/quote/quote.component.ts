@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { Quote } from '../quote';
+
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -14,6 +15,19 @@ export class QuoteComponent implements OnInit {
     new Quote(3, 'Get a new phone case','Diana has her birthday coming up soon',new Date(2022,1,12)),
   ]
 
+  details(index:number){
+    this.quotes[index].showDetails=!this.quotes[index].showDetails
+  }
+
+  deleteQuote(isComplete:boolean, index:number){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].theQuote}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
