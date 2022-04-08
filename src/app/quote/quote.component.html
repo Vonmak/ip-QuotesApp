@@ -3,13 +3,10 @@
     <p>
       {{ quote.id }}. {{ quote.theQuote }} <br />
       <button (click)="details(i)">Details</button>
-      <small>
-        {{ quote.authorName }}
-        {{ quote.creationDate | date }}
-      </small>
     </p>
     <div *ngIf="quote.showDetails">
       <app-quote-detail
+        [quote]="quote"
         (isComplete)="deleteQuote($event, i)"
       ></app-quote-detail>
     </div>

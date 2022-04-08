@@ -1,3 +1,11 @@
 <div>
+  <p>
+    <small>
+      <b>Author: </b> {{ quote.authorName }}. <br />
+
+      <b>Created on:</b> {{ quote.creationDate | date }}.
+    </small>
+  </p>
+
   <button (click)="quoteDelete(true)">Delete Quote</button>
 </div>
