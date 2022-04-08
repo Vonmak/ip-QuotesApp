@@ -6,6 +6,10 @@
       <b>Created on:</b> {{ quote.creationDate | date }}.
     </small>
   </p>
+  <p>
+    {{ quote.creationDate | dayCount }} Days have passed since the Quote was
+    created.
+  </p>
 
   <button (click)="quoteDelete(true)">Delete Quote</button>
 </div>
