@@ -3,7 +3,9 @@
     <p>
       {{ quote.id }}. {{ quote.theQuote }} <br />
       <button (click)="details(i)">Details</button>
+      <app-quote-vote></app-quote-vote>
     </p>
+
     <div *ngIf="quote.showDetails">
       <app-quote-detail
         [quote]="quote"
