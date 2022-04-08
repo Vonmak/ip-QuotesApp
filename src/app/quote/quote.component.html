@@ -1,6 +1,6 @@
 <div class="container text-success">
   <div *ngFor="let quote of quotes; let i = index">
-    <p>
+    <p appQuoteHighlight>
       {{ quote.id }}. {{ quote.theQuote }} <br />
       <button (click)="details(i)">Details</button>
       <app-quote-vote></app-quote-vote>
