@@ -1,10 +1,7 @@
-<div>
-  <div>
-    <button (click)="upVote()">UpVote</button>
-    {{ numberOfUpVotes }}
-  </div>
-  <div>
-    <button (click)="downVote()">UpVote</button>
-    {{ numberOfDownVotes }}
-  </div>
+<div class="container">
+  <i class="bi bi-hand-thumbs-up-fill text-warning" (click)="upVote()">Vote</i>
+  {{ numberOfUpVotes }}
+
+  <i class="bi bi-hand-thumbs-down text-danger" (click)="downVote()">Vote</i>
+  {{ numberOfDownVotes }}
 </div>
