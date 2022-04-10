@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+title= 'QUOTESPOT';
+
   constructor() { }
 
   ngOnInit(): void {
