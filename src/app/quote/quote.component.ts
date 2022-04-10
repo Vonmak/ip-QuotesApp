@@ -11,8 +11,8 @@ export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=[
     new Quote(1, 'Susan Nyabuto', 'Shughuli ni Mingi Masaa ndio Machache.', new Date(2022,4,7)),
-    new Quote(2, 'Buy cookies', 'I have to buy cookies for the parrot',new Date(2019,6,9)),
-    new Quote(3, 'Get a new phone case','Diana has her birthday coming up soon',new Date(2022,1,12)),
+    new Quote(2, 'Nelson Mandela', 'The greatest glory in living lies not in never falling, but in rising every time we fall. ',new Date(1994,0,1)),
+    new Quote(3, 'Steve Jobs',"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.",new Date(2015,1,12)),
   ]
 
   addNewQuote(quote:any){
