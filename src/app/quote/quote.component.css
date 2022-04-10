@@ -1,0 +1,39 @@
+.quote{
+    
+    background-color: bisque;
+    display: flex;
+}
+.theQuote{
+    border-radius: 10px;
+    background-color: #F0F8FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #405061;
+}
+.Quote{
+display: flex;
+}
+.first{
+border-radius: 5px;
+color: #405061;
+margin: 4px;
+padding: 10px;
+
+}
+.first span{
+    color: #F0F8FF;
+    padding: 0.7em;
+    background-color: #405061;
+    margin-right: .8em;
+    border-radius: 4px;
+}
+.first p{
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+button:hover{
+color: #405061;
+background-color: #F0F8FF;
+}

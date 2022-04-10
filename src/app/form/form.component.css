@@ -2,7 +2,7 @@
     border-radius: 10px;
 }
 .form,form {
-    background-color: aliceblue;
+    background-color: #F0F8FF;
     color: #405061;
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
   }
   button:hover{
 color: green;
-background-color: aliceblue;
+background-color: #F0F8FF;
   }
 
   

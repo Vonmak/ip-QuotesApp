@@ -13,11 +13,12 @@ export class QuoteHighlightDirective {
   private color(action:string){
     this.elem.nativeElement.style.color = action;
     
-  }
+  };
+  
 
   @HostListener('mouseenter')onMouseEnter(){
-    this.color('white');
-    this.backgroundColor('green')
+    this.color('#F0F8FF');
+    this.backgroundColor('#405061')
   }
 
   @HostListener('mouseleave') onMouseLeave() {

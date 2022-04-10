@@ -1,19 +1,24 @@
-<div class="container">
-  <div *ngFor="let quote of quotes; let i = index">
-    <p appQuoteHighlight>
-      {{ quote.id }}. {{ quote.theQuote }} <br />
-      <button (click)="details(i)">Details</button>
-      <app-quote-vote></app-quote-vote>
-    </p>
+<div class="container-fluid quote">
+  <div class="col-sm-6 theQuote">
+    <div *ngFor="let quote of quotes; let i = index" class="container Quote">
+      <div appQuoteHighlight class="container first">
+        <p>
+          <span>{{ quote.id }}</span> {{ quote.theQuote }}
+        </p>
+        <br />
+        <app-quote-vote></app-quote-vote>
+        <button (click)="details(i)" class="btn btn-primary">Details</button>
+      </div>
 
-    <div *ngIf="quote.showDetails">
-      <app-quote-detail
-        [quote]="quote"
-        (isComplete)="deleteQuote($event, i)"
-      ></app-quote-detail>
+      <div *ngIf="quote.showDetails" class="container second">
+        <app-quote-detail
+          [quote]="quote"
+          (isComplete)="deleteQuote($event, i)"
+        ></app-quote-detail>
+      </div>
     </div>
   </div>
-  <div>
+  <div class="col-sm-6">
     <app-form (addQuote)="addNewQuote($event)"></app-form>
   </div>
 </div>
