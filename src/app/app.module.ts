@@ -10,6 +10,7 @@ import { FormComponent } from './form/form.component';
 import { QuoteVoteComponent } from './quote-vote/quote-vote.component';
 import { DayCountPipe } from './day-count.pipe';
 import { QuoteHighlightDirective } from './quote-highlight.directive';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QuoteHighlightDirective } from './quote-highlight.directive';
     FormComponent,
     QuoteVoteComponent,
     DayCountPipe,
-    QuoteHighlightDirective
+    QuoteHighlightDirective,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
