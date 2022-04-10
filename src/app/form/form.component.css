@@ -1,0 +1,36 @@
+.form{
+    border-radius: 10px;
+}
+.form,form {
+    background-color: aliceblue;
+    color: #405061;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin: 10px;
+    
+  }
+  .form-group input {
+    padding: 5px;
+    width: 100%;
+    color: #405061;
+    
+  }
+  textarea{
+      color: #405061;
+  }
+  .form-group{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5px;
+  }
+  button:hover{
+color: green;
+background-color: aliceblue;
+  }
+
+  

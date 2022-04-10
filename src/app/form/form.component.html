@@ -1,37 +1,50 @@
-<h2>Create a New Quote!</h2>
-<form action="" (ngSubmit)="submitQuote()" #form="ngForm">
-  <div class="form-group">
-    <label for="theQuote">The Quote</label>
-    <textarea
-      name="theQuote"
-      id="theQuote"
-      rows="4"
-      [(ngModel)]="newQuote.theQuote"
-      #theQuote="ngModel"
-      required
-    ></textarea>
-  </div>
-  <div class="form-group">
-    <label for="authorName">The Author</label>
-    <input
-      type="text"
-      id="authorName"
-      name="authorName"
-      [(ngModel)]="newQuote.authorName"
-      #authorName="ngModel"
-      required
-    />
-  </div>
-  <div class="form-group">
-    <label for="creationDate">Created on</label>
-    <input
-      type="date"
-      id="creationDate"
-      name="creationDate"
-      [(ngModel)]="newQuote.creationDate"
-      #creationDate="ngModel"
-      required
-    />
-  </div>
-  <button type="submit" class="btn btn-success">Add Quote</button>
-</form>
+<div class="container form">
+  <h2>Create a New Quote!</h2>
+  <form action="" (ngSubmit)="submitQuote()" #form="ngForm">
+    <div class="form-group">
+      <label for="theQuote">The Quote</label>
+      <textarea
+        name="theQuote"
+        id="theQuote"
+        [(ngModel)]="newQuote.theQuote"
+        #theQuote="ngModel"
+        required
+      ></textarea>
+      <div
+        [hidden]="theQuote.valid || theQuote.pristine"
+        class="alert alert-danger"
+      >
+        The Quote is required!
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="authorName">The Author</label>
+      <input
+        type="text"
+        id="authorName"
+        name="authorName"
+        [(ngModel)]="newQuote.authorName"
+        #authorName="ngModel"
+        required
+      />
+      <div
+        [hidden]="authorName.valid || authorName.pristine"
+        class="alert alert-danger"
+      >
+        The Author's Name is required!
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="creationDate">Created on</label>
+      <input
+        type="date"
+        id="creationDate"
+        name="creationDate"
+        [(ngModel)]="newQuote.creationDate"
+        #creationDate="ngModel"
+        required
+      />
+    </div>
+    <button type="submit" class="btn btn-success">Add Quote</button>
+  </form>
+</div>
