@@ -10,7 +10,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[]=[
-    new Quote(1, 'Susan Nyabuto', 'Shughuli ni Mingi Masaa ndio Machache.', new Date(2022,4,7)),
+    new Quote(1, 'Susan Nyabuto', 'Shughuli ni Mingi Masaa ndio Machache.', new Date(2022,3,7)),
     new Quote(2, 'Nelson Mandela', 'The greatest glory in living lies not in never falling, but in rising every time we fall. ',new Date(1994,0,1)),
     new Quote(3, 'Steve Jobs',"Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma – which is living with the results of other people's thinking.",new Date(2015,1,12)),
   ]

@@ -6,6 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid #405061;
+    margin: 8px;
 }
 span{
     color: aliceblue;
