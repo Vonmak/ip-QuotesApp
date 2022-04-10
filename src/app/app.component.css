@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #F0F8FF;
+}
+img{
+    height: 50px;
+    width: 50px;
+}
+.rss.opacity { 
+    filter: invert(100%);
+    margin-left: 15px;
+ }
+.footer{
+    height: 10vh;
+    background-color: #F0F8FF;
+    color: #405061;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -3,8 +3,6 @@
     overflow: scroll;
     background-color: #405061;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 .theQuote{
     border-radius: 10px;
@@ -15,6 +13,7 @@
     color: #405061;
     height: fit-content;
     overflow: scroll;
+    margin: 20px;
 }
 .Quote{
 display: flex;
