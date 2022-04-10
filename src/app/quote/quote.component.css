@@ -1,7 +1,10 @@
 .quote{
-    
-    background-color: bisque;
+    height: 80vh;
+    overflow: scroll;
+    background-color: #405061;
     display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 .theQuote{
     border-radius: 10px;
@@ -10,6 +13,8 @@
     flex-direction: column;
     justify-content: space-between;
     color: #405061;
+    height: fit-content;
+    overflow: scroll;
 }
 .Quote{
 display: flex;
@@ -36,4 +41,10 @@ padding: 10px;
 button:hover{
 color: #405061;
 background-color: #F0F8FF;
+}
+.form{
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
