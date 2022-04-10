@@ -1,0 +1,20 @@
+.detail{
+    background-color: aliceblue;
+    color: #405061;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: aliceblue;
+    padding: 0.8em 0.7em 0.7em 0.7em;
+    background-color: #405061;
+    margin-right: .8em;
+    border-radius: 4px;
+}
+button:hover{
+background-color: #fff;
+color: red;
+}

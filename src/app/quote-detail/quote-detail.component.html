@@ -1,15 +1,17 @@
-<div>
+<div class="container detail">
   <p>
     <small>
       <b>Author: </b> {{ quote.authorName }}. <br />
 
-      <b>Created on:</b> {{ quote.creationDate | date }}.
+      <b>Created on: </b> <em>{{ quote.creationDate | date }}.</em>
     </small>
   </p>
   <p>
-    {{ quote.creationDate | dayCount }} Days have passed since the Quote was
-    created.
+    <span>{{ quote.creationDate | dayCount }} Days</span> have passed since the
+    Quote was created.
   </p>
 
-  <button (click)="quoteDelete(true)">Delete Quote</button>
+  <button (click)="quoteDelete(true)" class="btn btn-danger">
+    Delete Quote
+  </button>
 </div>
